@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +63,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HandymanSignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandymanSignUpForm.Designer.cs">
+      <DependentUpon>HandymanSignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeownerSignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeownerSignUpForm.Designer.cs">
+      <DependentUpon>HomeownerSignUpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +89,12 @@
     <Compile Include="SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="HandymanSignUpForm.resx">
+      <DependentUpon>HandymanSignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeownerSignUpForm.resx">
+      <DependentUpon>HomeownerSignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
